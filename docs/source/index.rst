@@ -1,22 +1,40 @@
-Welcome to Lumache's documentation!
-===================================
+.. KineWheelArena - DLC documentation master file, created by
+   sphinx-quickstart on Mon Jan  9 13:17:22 2023.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
-.. note::
-
-   This project is under active development.
-
-Contents
---------
+Welcome to KineWheelArena - DLC's documentation!
+================================================
 
 .. toctree::
+   :maxdepth: 2
+   :caption: Contents:
 
-   usage
-   api
+
+*Kine Wheel Arena – DLC* is an open-source experimental setup for markerless paw tracking of head-fixed mice running on a wheel.
+The apparatus is based on the open-source motion tracking system `(KineMouse Wheel) <https://hackaday.io/project/160744-kinemouse-wheel>`_ designed by `Richard Warren <https://richard-warren.github.io>`_.
+It has been extended with a camera, lighting, and a controller to run both in synchronization.
+Tracking is done using a Deep Neural Network trained with `DeepLabCut <https://www.mackenziemathislab.org/deeplabcut>`_ (DLC).
+The system is available for purchase at `LABmaker <https://www.labmaker.org>`_.
+
+.. image:: ./media/Labeled-Video-Sample-LowRes-12FPS.gif
+   :width: 500
+   :alt: Video Clip Annotated by Deep Neural Network
+
+*Figure 1 – Video clip showing mouse paws annotated by Deep Neural Network.*
+
+Indices and tables
+==================
+
+.. Link to README.md document in documentation root folder
+.. Requirements.md for Requirements
+.. Add [Repository Contents section to [Installation.md]]
+
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+
+* :ref:`search`
+* :doc:`Requirements </README>`
+* :doc:`Installation </README>`
+* :doc:`Usage </README>`
+* :doc:`License </README>`

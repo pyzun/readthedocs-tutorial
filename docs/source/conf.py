@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'KWA-DLC'
+copyright = '2023, BA'
+author = 'BA'
 
 release = '0.1'
 version = '0.1.0'
@@ -12,12 +12,18 @@ version = '0.1.0'
 # -- General configuration
 
 extensions = [
+    'myst_parser',
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
 ]
+
+# Enable internal document links to headers (# -> h1, ## -> h2, ...)
+# Without it, header links won't work in markdown.
+# C.f. https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#auto-generated-header-anchors
+myst_heading_anchors = 6
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
