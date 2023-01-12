@@ -10,8 +10,8 @@ Tracking is done using a Deep Neural Network trained with [DeepLabCut](https://w
 
 ## Table of Contents
 
-- [Requirements](#requirements)
-    - [Hardware](#hardware)
+* [Requirements](#requirements)
+    * [Hardware](#hardware)
     - [Software](#software)
         - [KWA-Controller App](#kwa-controller-app)
         - [pylon Viewer](#pylon-viewer)
