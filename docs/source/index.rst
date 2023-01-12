@@ -23,7 +23,7 @@ The system is available for purchase at `LABmaker <https://www.labmaker.org>`_.
 
 *Figure 1 – Video clip showing mouse paws annotated by Deep Neural Network.*
 
-Indices and tables
+Table of Contents
 ==================
 
 .. Link to README.md document in documentation root folder
