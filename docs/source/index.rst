@@ -33,8 +33,8 @@ Indices and tables
 .. * :ref:`genindex`
 .. * :ref:`modindex`
 
-* :ref:`search`
-* :doc:`Requirements </README>`
-* :doc:`Installation </README>`
-* :doc:`Usage </README>`
-* :doc:`License </README>`
+* :ref:`Search`
+* :doc:`Requirements </Requirements>`
+* :doc:`Installation </Installation>`
+* :doc:`Usage </Usage>`
+* :doc:`License </License>`
