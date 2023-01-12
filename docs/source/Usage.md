@@ -1,6 +1,6 @@
-## Usage
+# Usage
 
-### Workflow
+## Workflow
 
 The general workflow consists of two steps:
 
@@ -9,7 +9,7 @@ The general workflow consists of two steps:
     <li>analyzing video (i.e., using a trained Deep Neural Network to perform inference).</li>
 </ol>
 
-### (I) Record Videos
+## (I) Record Videos
 
 Each recording session requires the following steps to be performed to record videos:
 
@@ -23,14 +23,14 @@ Each recording session requires the following steps to be performed to record vi
         <li><a href="#record">Record videos</a> in pylon Viewer.</li>
     </ol>
 
-### (II) Analyze and Label Videos
+## (II) Analyze and Label Videos
 
 The following sections explain how to use the trained deep neural network to predict paw locations in recorded video.
 The predictions are stored as CSV and HDF5 files.
 They can optionally be used to label the analyzed video (i.e., plot the network's predictions for each frame) or in any other software which supports DLC's prediction output format.
 For details, see the section on [inference results](#inference-results).
 
-#### Create DLC Project for Inference
+### Create DLC Project for Inference
 
 To run inference, a DLC project must be created and the weights of the trained neural network must be downloaded.
 
@@ -65,7 +65,7 @@ Open `DLC-Skeleton\config.yaml` with a text editor (e.g., Notepad) and set `proj
 project_path: C:\Data\DLC-Skeleton
 ```
 
-#### Inference using Deep Neural Network
+### Inference using Deep Neural Network
 
 Open an *Anaconda Prompt* (press Windows key and search for Anaconda Prompt) and activate the *kwa* `conda` environment.
 
@@ -80,7 +80,7 @@ To infer the location of paws in recorded video, either
     <li><i>use a cloud provider</i> – upload <code>inference.ipynb</code> to a cloud provider hosting Jupyter Notebooks, for instance, Google Colab or Paperspace, and run it on their machines.</li>
 </ol>
 
-##### (A) Run Inference on a Local Machine
+#### (A) Run Inference on a Local Machine
 
 For convenience, this repository provides a Python command-line script `inference.py` and a Jupyter Notebook `inference.ipynb` to run inference on a local machine.
 The script as well as the notebook just provide wrapper code which internally uses DLC's `deeplabcut.analyze_videos()` and `deeplabcut.create_labeled_video()` functions.
@@ -137,7 +137,7 @@ folder as well.
 python inference.py -c /path/to/dlc/config.yaml label -v /path/to/video_file.mp4
 ```
 
-#### Inference Results
+### Inference Results
 
 Inference results are stored as CSV and HDF5 files. Table 1 shows an extract of such a CSV file.
 
@@ -154,7 +154,7 @@ Inference results are stored as CSV and HDF5 files. Table 1 shows an extract of 
 *All remaining rows correspond to exactly one frame in the analyzed video, their respective frame index given in the first column.*
 *For each frame and body part, x-/y-coordinates (in # of pixels) and the network's assigned probability of the particular body part being present at these coordinates are given.*
 
-##### (B) Run Inference on a Cloud Provider
+#### (B) Run Inference on a Cloud Provider
 
 Upload the Jupyter Notebook `Inference\inference.ipynb` to Google Colab and follow the instructions inside the notebook.
 
