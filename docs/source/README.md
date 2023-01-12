@@ -8,31 +8,6 @@ Tracking is done using a Deep Neural Network trained with [DeepLabCut](https://w
 
 *Figure 1 – Video clip showing mouse paws annotated by Deep Neural Network.*
 
-## Table of Contents
-
-- [Requirements](#requirements)
-    - [Hardware](#hardware)
-    - [Software](#software)
-        - [KWA-Controller App](#kwa-controller-app)
-        - [pylon Viewer](#pylon-viewer)
-            - [Install pylon Viewer](#install-pylon-viewer)
-            - [Open Camera](#open-camera)
-            - [Load Camera Features](#load-camera-features)
-            - [Recording Settings](#recording-settings)
-            - [Record](#record)
-        - [Anaconda/Miniconda](#anacondaminiconda)
-- [Repository Contents](#repository-contents)
-- [Installation](#installation)
-- [Usage](#usage)
-    - [Workflow](#workflow)
-    - [I Record videos](#i-record-videos)
-    - [II Analyze videos](#ii-analyze-and-label-videos)
-        - [Create DLC Project for Inference](#create-dlc-project-for-inference)
-        - [Inference](#inference-using-deep-neural-network)
-            - [A Run Inference on a Local Machine](#a-run-inference-on-a-local-machine)
-            - [B Run Inference on a Cloud Provider](#b-run-inference-on-a-cloud-provider)
-- [License](#license)
-
 ## Requirements
 
 ### Hardware
@@ -50,9 +25,9 @@ Furthermore, the complimentary [software](#software) to operate the system requi
 
 For running the system, a Windows machine with the following software installed is required:
 
-- [KWA-Controller App](#kwa-controller-app) – A Graphical User Interface (GUI) application to interface with the Basler camera and the lighting of the system by means of an Arduino. Required for preparing the KWA-DLC system for recording.
-- [pylon Viewer](#pylon-viewer) – Basler's camera software suit for configuring and recording on Basler cameras. Required for recording video to storage and loading camera configuration.
-- [Anaconda/Miniconda](#anacondaminiconda) – A package and environment management system for Python (and other languages). Required for setting up a Python environment needed to perform tracking of mouse paws in recorded videos.
+* [KWA-Controller App](#kwa-controller-app) – A Graphical User Interface (GUI) application to interface with the Basler camera and the lighting of the system by means of an Arduino. Required for preparing the KWA-DLC system for recording.
+* [pylon Viewer](#pylon-viewer) – Basler's camera software suit for configuring and recording on Basler cameras. Required for recording video to storage and loading camera configuration.
+* [Anaconda/Miniconda](#anacondaminiconda) – A package and environment management system for Python (and other languages). Required for setting up a Python environment needed to perform tracking of mouse paws in recorded videos.
 
 *Note:* All software listed above can be downloaded free of charge.
 
