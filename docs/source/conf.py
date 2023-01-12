@@ -37,5 +37,9 @@ templates_path = ['_templates']
 
 html_theme = 'sphinx_rtd_theme'
 
+# Override list-style in RTD theme (theme.css) (to make bullet points visible)
+# URL: https://docs.readthedocs.io/en/stable/guides/adding-custom-css.html?highlight=theme#overriding-or-replacing-a-theme-s-stylesheet
+html_style = 'css/override.css'
+
 # -- Options for EPUB output
 epub_show_urls = 'footnote'

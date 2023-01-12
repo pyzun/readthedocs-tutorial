@@ -1,0 +1,8 @@
+/** css/override.css **/
+
+/* Include ReadTheDocs theme */
+@import 'theme.css';       /* for the Read the Docs theme */
+
+li {
+    list-style: disc;
+}
