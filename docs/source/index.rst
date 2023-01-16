@@ -33,7 +33,6 @@ Table of Contents
 .. * :ref:`genindex`
 .. * :ref:`modindex`
 
-* :ref:`Search`
 * :doc:`Requirements </Requirements>`
 * :doc:`Installation </Installation>`
 * :doc:`Usage </Usage>`
