@@ -10,3 +10,8 @@
 simple ul,li {
     list-style: disc;
 }
+
+simple ul {
+    margin: unset;
+    padding: unset;
+}

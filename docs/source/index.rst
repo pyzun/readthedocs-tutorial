@@ -20,7 +20,7 @@ The system is available for purchase at `LABmaker <https://www.labmaker.org>`_.
 
 .. toctree::
    :maxdepth: 4
-   :caption: Contents:
+   :caption: Contents
    
    Requirements
    Installation

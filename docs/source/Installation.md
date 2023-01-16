@@ -1,4 +1,4 @@
-## Repository Contents
+# Repository Contents
 
 ```
 |   kine-wheel-arena.yml
@@ -19,7 +19,7 @@
         inference.py
 ```
 
-## Installation
+# Installation
 
 Steps described in this section only need to be done once.
 This guide assumes that [Anaconda/Miniconda](Requirements.md#anacondaminiconda) is used to manage Python and its packages.

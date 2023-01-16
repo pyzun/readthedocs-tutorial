@@ -1,6 +1,6 @@
-## Requirements
+# Requirements
 
-### Hardware
+## Hardware
 
 *Kine Wheel Arena – DLC* (KWA-DLC) consists of a mouse wheel, camera, lighting, a control unit (Arduino) to synchronize camera and lighting, and a surrounding box which shields the system from interference of external light sources.
 Furthermore, the complimentary [software](#software) to operate the system requires a Windows machine.
@@ -11,7 +11,7 @@ Furthermore, the complimentary [software](#software) to operate the system requi
 
 *Figure 2 – Photo of the experimental setup from the view of the camera.*
 
-### Software
+## Software
 
 For running the system, a Windows machine with the following software installed is required:
 
@@ -21,7 +21,7 @@ For running the system, a Windows machine with the following software installed 
 
 *Note:* All software listed above can be downloaded free of charge.
 
-#### KWA-Controller App
+### KWA-Controller App
 
 The *KWA-Controller* app is a small Windows application with a graphical user interface, which allows the user to control the lighting and the camera's rate at which it is capturing images.
 It is required to get the system ready to record videos using [pylon Viewer](#pylon-viewer).
@@ -32,7 +32,7 @@ A compiled version of the program for Windows 64-bit OS is available for downloa
 
 *Figure 3a – The graphical user interface of the KWA-Controller app.*
 
-##### Usage
+#### Usage
 
 First, ensure that the *KWA-DLC* control unit (Arduino) is connected the Windows machine on which to record video.
 
@@ -62,9 +62,9 @@ Click on *Connect* to establish communication with the Arduino. If no errors ico
 
 *Figure 3d – The KWA-Controller app and the Arduino are communicating over port COM4. Lights are switched on and the camera is triggered at 60 Hz.*
 
-#### pylon Viewer
+### pylon Viewer
 
-##### Install pylon Viewer
+#### Install pylon Viewer
 
 Download and install the software suit from the official Basler Website: [pylon Viewer](https://www.baslerweb.com/en/downloads/software-downloads/#type=pylonsoftware;language=all;version=7.2.1)
 
@@ -72,7 +72,7 @@ To record video in MPEG-4 file format (recommended), download and install the su
 
 Note: The rest of this documentation assumes that the package has been installed.
 
-##### Open Camera
+#### Open Camera
 
 Ensure that the camera is connected to the computer and listed in the *Devices* pane in pylon Viewer.
 Select the camera and open it by clicking on the *Open Device* button on the toolbar (Figure 4a).
@@ -81,14 +81,14 @@ Select the camera and open it by clicking on the *Open Device* button on the too
 
 *Figure 4a – The image shows the Devices pane in pylon Viewer with the Basler acA720-520uc camera selected and ready to be opened by clicking the green Open Device button on the far left on the toolbar on top.*
 
-##### Load Camera Features
+#### Load Camera Features
 
 To load the provided camera configuration, ensure that the camera device is opened and no recording is running.
 Then, in the menu bar, click on *Camera* > *Load Features*.
 In the open file dialog box navigate to `Camera/` in the Git repository folder and select `acA720-520uc-inference.pfs`.
 Click *Open* to load the camera configuration.
 
-##### Recording Settings
+#### Recording Settings
 
 To edit the recording settings, ensure that the camera device is opened and no recording is running. Then, in the menu bar, click on *Window* > *Recording Settings*. In the *Recording Settings* pane, choose the *Video* option.
 
@@ -104,7 +104,7 @@ For more details, refer to the [pylon Viewer documentation on recording](https:/
 
 *Figure 4b – The image shows the Recording Settings pane in pylon Viewer. The recording to video option is selected. Videos will be recorded in highest quality in MPEG-4 file format with a fixed playback speed of 720 FPS. They will be saved to `C:\Users\KWA\Videos`. Every frame captured by the camera will be written to video. The recording buffer is set to hold 5,000 frames.*
 
-##### Record
+#### Record
 
 To record video, ensure that the camera device is [opened](#open-camera), [configured](#load-camera-features), selected in the *Devices* pane, and the [Recording Settings](#recording-settings) are adjusted.
 
@@ -125,7 +125,7 @@ To stop a recording, click the *Stop* button (circled square icon) on the toolba
 For more details, refer to the [pylon Viewer documentation on recording](https://docs.baslerweb.com/recording).
 
 
-#### Anaconda/Miniconda
+### Anaconda/Miniconda
 
 [Download](https://conda.io/projects/conda/en/stable/user-guide/install/download.html) and install Anaconda or Miniconda for Windows from conda.io.
 The difference between both versions is explained on the download page; both work with this guide.
