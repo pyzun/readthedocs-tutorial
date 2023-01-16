@@ -11,7 +11,11 @@ simple ul,li {
     list-style: disc;
 }
 
-simple ul {
-    margin: unset;
-    padding: unset;
+simple ul,ol,dl {
+    margin: 10px 0 10px 30px;
+    padding: 0px;
+}
+
+line-height li {
+    line-height: 24px;
 }
