@@ -6,11 +6,6 @@
 Welcome to KineWheelArena - DLC's documentation!
 ================================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
-
 *Kine Wheel Arena – DLC* is an open-source experimental setup for markerless paw tracking of head-fixed mice running on a wheel.
 The apparatus is based on the open-source motion tracking system `(KineMouse Wheel) <https://hackaday.io/project/160744-kinemouse-wheel>`_ designed by `Richard Warren <https://richard-warren.github.io>`_.
 It has been extended with a camera, lighting, and a controller to run both in synchronization.
@@ -23,17 +18,11 @@ The system is available for purchase at `LABmaker <https://www.labmaker.org>`_.
 
 *Figure 1 – Video clip showing mouse paws annotated by Deep Neural Network.*
 
-Table of Contents
-==================
-
-.. Link to README.md document in documentation root folder
-.. Requirements.md for Requirements
-.. Add [Repository Contents section to [Installation.md]]
-
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-
-* :doc:`Requirements </Requirements>`
-* :doc:`Installation </Installation>`
-* :doc:`Usage </Usage>`
-* :doc:`License </License>`
+.. toctree::
+   :maxdepth: 4
+   :caption: Contents:
+   
+   Requirements
+   Installation
+   Usage
+   License
