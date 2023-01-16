@@ -35,14 +35,14 @@ templates_path = ['_templates']
 
 # -- Options for HTML output
 
-html_theme = 'sphinx_rtd_theme'
+#html_theme = 'sphinx_rtd_theme'
 
 # These folders are copied to the documentation's HTML output
 html_static_path = ['_static']
 
 # Override list-style in RTD theme (theme.css) (to make bullet points visible)
 # URL: https://docs.readthedocs.io/en/stable/guides/adding-custom-css.html?highlight=theme#overriding-or-replacing-a-theme-s-stylesheet
-html_style = 'css/override.css'
+#html_style = 'css/override.css'
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
