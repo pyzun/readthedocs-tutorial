@@ -137,6 +137,12 @@ folder as well.
 python inference.py -c /path/to/dlc/config.yaml label -v /path/to/video_file.mp4
 ```
 
+#### (B) Run Inference on a Cloud Provider
+
+Upload the Jupyter Notebook `Inference\inference.ipynb` to Google Colab and follow the instructions inside the notebook.
+
+> **TODO** E.g., try out instructions on Google Colab
+
 ### Inference Results
 
 Inference results are stored as CSV and HDF5 files. Table 1 shows an extract of such a CSV file.
@@ -153,9 +159,3 @@ Inference results are stored as CSV and HDF5 files. Table 1 shows an extract of 
 *The first two rows are header rows: row one defines label names, each duplicated for one coordinate/likelihood-triple in row two.*
 *All remaining rows correspond to exactly one frame in the analyzed video, their respective frame index given in the first column.*
 *For each frame and body part, x-/y-coordinates (in # of pixels) and the network's assigned probability of the particular body part being present at these coordinates are given.*
-
-#### (B) Run Inference on a Cloud Provider
-
-Upload the Jupyter Notebook `Inference\inference.ipynb` to Google Colab and follow the instructions inside the notebook.
-
-> **TODO** E.g., try out instructions on Google Colab
