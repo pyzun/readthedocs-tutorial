@@ -4,7 +4,7 @@
 
 The general workflow consists of two steps:
 
-<ol class="line-height" style="list-style-type: upper-roman">
+<ol class="my-ol" style="list-style-type: upper-roman">
     <li>recording video and</li>
     <li>analyzing video (i.e., using a trained Deep Neural Network to perform inference).</li>
 </ol>
@@ -18,7 +18,7 @@ Each recording session requires the following steps to be performed to record vi
 1. Start the [KWA-Controller app](Requirements.md#kwa-controller-app) on the computer which is connected to the system's Basler camera and the Arduino.
 1. Start [pylon Viewer](Requirements.md#pylon-viewer) for recording video to storage.
 
-    <ol class="line-height" style="list-style-type: lower-roman">
+    <ol class="my-ol" style="list-style-type: lower-roman">
         <li><a href="Requirements.html#open-camera">Open the camera device</a>.</li>
         <li><a href="Requirements.html#load-camera-features">Load the camera features</a>.</li>
         <li><a href="Requirements.html#record">Record videos</a> in pylon Viewer.</li>
@@ -76,7 +76,7 @@ conda activate kwa
 
 To infer the location of paws in recorded video, either
 
-<ol class="simple" style="list-style-type: upper-alpha">
+<ol class="my-ol" style="list-style-type: upper-alpha">
     <li><i>use your local machine</i> – run the Python command-line script <code>inference.py</code>; or</li>
     <li><i>use a cloud provider</i> – upload <code>inference.ipynb</code> to a cloud provider hosting Jupyter Notebooks, for instance, Google Colab or Paperspace, and run it on their machines.</li>
 </ol>
